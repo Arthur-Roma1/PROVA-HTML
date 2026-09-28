@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula 1 — Pilotos</title>
+</head>
+<body>
+<header>
+    <h1>Fórmula 1</h1>
+    <nav aria-label="Navegação principal">
+        <a href="index.html">Início</a> |
+        <a href="historia.html">História</a> |
+        <a href="equipes.html">Equipes</a> |
+        <a href="pilotos.html">Pilotos</a>
+    </nav>
+</header>
+<main>
+
+<section>
+    <h2>Pilotos da Fórmula 1</h2>
+
+    <article>
+        <h3>Pilotos históricos</h3>
+        <p>A história da Fórmula 1 possui pilotos de diferentes gerações que se destacaram por títulos, vitórias e participação em momentos importantes da categoria.</p>
+        <ul>
+            <li>Ayrton Senna</li>
+            <li>Michael Schumacher</li>
+            <li>Lewis Hamilton</li>
+            <li>Max Verstappen</li>
+        </ul>
+    </article>
+
+    <figure>
+        <img src="../IMAGENS/max.webp" alt="Max Verstappen em um contexto de Fórmula 1">
+        <figcaption>Max Verstappen, piloto de Fórmula 1. E grande nome da formula 1 nos dias atuais</figcaption>
+    </figure>
+
+    <aside>
+        <h3>Pesquisa sobre Fórmula 1</h3>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Conte um pouco sobre seu interesse pela categoria</legend>
+
+                <p>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </p>
+
+                <p>
+                    <label for="data">Data de nascimento:</label><br>
+                    <input type="date" id="data" name="data" required>
+                </p>
+
+                <p>
+                    <label for="piloto">Piloto favorito:</label><br>
+                    <input type="text" id="piloto" name="piloto" list="lista-pilotos"
+                           placeholder="Digite ou escolha um piloto" required>
+                    <datalist id="lista-pilotos">
+                        <option value="Ayrton Senna">
+                        <option value="Michael Schumacher">
+                        <option value="Lewis Hamilton">
+                        <option value="Max Verstappen">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="nota">Quanto você gosta de Fórmula 1?</label><br>
+                    <input type="range" id="nota" name="nota" min="0" max="10" value="5">
+                </p>
+
+                <p>
+                    <label for="arquivo">Envie uma imagem relacionada à Fórmula 1:</label><br>
+                    <input type="file" id="arquivo" name="arquivo">
+                </p>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </aside>
+</section>
+
+</main>
+</body>
+</html>
